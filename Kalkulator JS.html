@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .header{
+            border: 1px solid black;
+            width: 450px;
+            height: 500px;
+            margin-top: 50px;
+            margin-left: 500px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: burlywood;
+
+            box-sizing: border-box;
+
+        }
+
+        .btn_tambah{
+            width: 80px;
+            height: 50px;
+            margin-top: 120px;
+            padding-top: 10px;
+            
+            text-align: center;
+            border-radius: 10px;
+            background-color: #b04b10;
+
+            box-sizing: border-box;
+
+        }
+        
+        .btn{
+            width: 450px;
+            height: 50px;
+            margin-top: 120px;
+            padding-top: 1px;
+
+            
+            text-align: center;
+            border-radius: 10px;
+            background-color: #b04b10;
+
+            box-sizing: border-box;
+
+        }
+
+        .input1{
+            width: 250px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: 40px;
+            border-radius: 10px;
+            padding-top: 10px;
+
+
+            text-align: center;
+
+            background-color: #b04b10;
+            
+        }
+
+        .input2{
+            width: 250px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: -20px;
+            border-radius: 10px;
+            padding-top: 10px;
+
+
+            text-align: center;
+
+            background-color: #b04b10;
+        }
+
+        .hasil{
+            width: 250px;
+            height: 50px;
+            margin-top: 60px;
+            margin-left: 100px;
+            padding: 10px, 10px, 10px;
+            background-color: burlywood;
+        }
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class ="header">
+        <h1>Kalkulator Javascript </h1>
+
+        <div class="input1">
+            <input type="text" id="angka1" placeholder="Masukkan angka 1" onclick="">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="input2">
+            <input type="text" id="angka2" placeholder="Masukkan angka 2" onclick="">
+        </div>
+
+        <div class="btn">
+            
+            <p>
+                <button type="button" onclick="operasi_tambah()"> Tambah </button>
+                 <button type="button" onclick="operasi_kurang()"> Kurang </button>
+                 <button type="button" onclick="operasi_kali()"> Kali </button>
+                 <button type="button" onclick="operasi_bagi()"> Bagi </button>
+                </p>
+        </div>
+
+        
+
+        <div class="hasil">
+            <h1 id="hasiltext" >HASIL </h1>
+        </div>
+
+
+    </div>
+
+
+    
+
+    
+
+</body>
+<script>
+    function operasi_tambah(){
+
+        var input1=document.getElementById("angka1").value;
+        var input2=document.getElementById("angka2").value;
+        var angka1=Number(input1);
+        var angka2=Number(input2);
+        var hasil=angka1+angka2
+
+        document.getElementById("hasiltext").innerHTML=hasil;
+        
+    }
+
+    function operasi_kurang(){
+
+    var input1=document.getElementById("angka1").value;
+    var input2=document.getElementById("angka2").value;
+    var angka1=Number(input1);
+    var angka2=Number(input2);
+    var hasil=angka1-angka2
+
+    document.getElementById("hasiltext").innerHTML=hasil;
+
+    }
+
+    function operasi_kali(){
+
+        var input1=document.getElementById("angka1").value;
+        var input2=document.getElementById("angka2").value;
+        var angka1=Number(input1);
+        var angka2=Number(input2);
+        var hasil=angka1*angka2
+
+        document.getElementById("hasiltext").innerHTML=hasil;
+        
+    }
+
+    function operasi_bagi(){
+
+        var input1=document.getElementById("angka1").value;
+        var input2=document.getElementById("angka2").value;
+        var angka1=Number(input1);
+        var angka2=Number(input2);
+        var hasil=angka1/angka2
+
+        document.getElementById("hasiltext").innerHTML=hasil;
+        
+    }
+
+</script>
+</html>

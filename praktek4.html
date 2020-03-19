@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .container{
+        border: 1px solid black;
+        height: 400px;
+        width: 550px;
+        background-image: url();
+    }
+
+    .gallery1{
+        border: 2.5px solid red;
+        background-image: url("1.jpg");
+        height: 70px;
+        width: 122px;
+        margin: 5px 5px 5px 5px;
+        float: left;
+        background-size: cover;
+    }
+
+    .gallery2{
+        border: 2.5px solid green;
+        background-image: url("2.jpg");
+        height: 70px;
+        width: 122px;
+        margin: 5px 5px 5px 5px;
+        float: left;
+        background-size: cover;
+    }
+
+    .gallery3{
+        border: 2.5px solid blue;
+        background-image: url("3.jpg");
+        height: 70px;
+        width: 122px;
+        margin: 5px 5px 5px 5px;
+        float: left;
+        background-size: cover;
+    }
+
+    .gallery4{
+        border: 2.5px solid blueviolet;
+        background-image: url("4.jpg");
+        height: 70px;
+        width: 122px;
+        margin: 5px 5px 5px 5px;
+        float: left;
+        background-size: cover;
+    }
+
+    .container2{
+        border: 1px solid black;
+        height: 85px;
+        width: 550px;
+        background-color: white;
+    }
+
+
+</style>
+
+<script>
+
+    function g1(){
+        document.getElementById("container").style.backgroundImage="url(1.jpg)";
+    }
+
+    function g2(){
+        document.getElementById("container").style.backgroundImage="url(2.jpg)";
+    }
+
+    function g3(){
+        document.getElementById("container").style.backgroundImage="url(3.jpg)";
+    }
+
+    function g4(){
+        document.getElementById("container").style.backgroundImage="url(4.jpg)";
+    }
+
+    // function openNav(){
+    //     document.getElementById("panelkiri").className="sidepanel";
+    //     document.getElementById("panelutama").className="main";
+    // } 
+
+    // function closeNav(){
+    //     document.getElementById("panelkiri").className="sidepanelclose";
+    //     document.getElementById("panelutama").className="mainclose";
+    // }
+</script>
+
+</head>
+<body>
+    
+    <div class="container" id="container">
+
+    </div>
+        <div class="container2">
+
+            <div class="gallery1" onclick="g1()" id="g1">
+
+            </div>
+    
+            <div class="gallery2" onclick="g2()" id="g2">
+                
+            </div>
+    
+            <div class="gallery3" onclick="g3()" id="g3">
+                
+            </div>
+    
+            <div class="gallery4" onclick="g4()" id="g4">
+                
+            </div>
+
+        </div>
+</body>
+</html>

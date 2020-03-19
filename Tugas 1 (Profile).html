@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+
+        .container{
+
+            border: 5px solid black;
+            width: 800px;
+            height: 1500px;
+            margin: 50px auto;
+            top: 100px;
+            background-color: greenyellow;
+            position: relative;
+
+        }
+
+        .layarkaca{
+            width: 300px;
+            height: 45px;
+            background-color: gray;
+            top: 30px;
+            left: 10px;
+            opacity: 0.35;
+            position: absolute;
+
+        }
+        .ribbon{
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            background-size: cover;
+            top: 0px;
+            left: 710px;
+            background-image: url(ribbon.png);
+
+            
+            
+        }
+
+        .judul{
+
+            border: 1px solid black;
+            width: 800px;
+            height: 90px;
+            padding-top: 10px;
+            padding-left: 10px;
+            background-color: blueviolet;
+
+            box-sizing: border-box;
+
+        }
+
+        .menu{
+            border: 1px solid black;
+            width: 800px;
+            height: 50px;
+            padding-top: 10px;
+            padding-left: 20px;
+            background-color: grey;
+
+            box-sizing: border-box;
+        }
+
+        .judulartikel{
+            width: 800px;
+            height: 50px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .konten{
+            border: 2px solid black;
+            width: 800px;
+            height: 450px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            background-color: honeydew;
+            overflow: auto;
+
+            box-sizing: border-box;
+            
+
+        }
+
+
+        .konten img{
+            width: 300px;
+            height: 300px;
+            margin-left: 10px;
+            padding: 5px;
+            float: left;
+        }
+
+        .gallery{
+            background-color: cadetblue;
+            width: 180px;
+            height: 100px;
+            margin: 8px 8px 8px 8px;
+           float: left;
+
+           background-image: url(iconub.png);
+           background-size: contain;
+
+        }
+
+        .mode{
+            width: 135px;
+            height: 85px;
+            right: 200px;
+            top: 40px;
+            padding-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: blueviolet;
+
+            position: fixed
+
+        
+        }
+
+        .cobaevent{
+            width: 90px;
+            height: 90px;
+            background-color: greenyellow;
+        }
+
+        .cobaevent1{
+            width: 90px;
+            height: 90px;
+            background-color: yellow;
+        }
+
+
+
+       
+
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="mode">
+        <button type="button" onclick="ubahwarna_dark()"> Mode Malam Hari </button>
+
+        <br>
+        <br>
+
+        <button type="button" onclick="ubahwarna_light()"> Mode Siang Hari </button> 
+    
+    </div>
+
+    <div class="container">
+
+        <div class="ribbon" width="90px" height="90ppx">
+
+        </div>
+        
+        <div class="judul">
+            <h1> My Website </h1>
+        </div>
+        <div class="layarkaca"></div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Artikel 1</a>
+            <a href="#">Artikel 2</a>
+
+        </div>
+        <div class="banner">
+            <img src="banner.jpg" width="800px">
+        </div>
+        <div class="judulartikel">
+
+            <h1> Judul Artikel </h1>
+        </div>
+        <div id="konten" class="konten">
+                <img src="  " width="300px" height="200px">
+            
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, exercitationem dolorem ipsa doloribus possimus omnis cupiditate excepturi ipsum quae, in dolorum hic a magni quam laborum voluptatibus provident porro ad?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione facere deleniti! Ducimus aut expedita ut, deleniti eveniet nostrum perspiciatis eos aliquam dignissimos culpa esse, facere at alias temporibus autem.</p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat harum quisquam voluptatum nam! Minima itaque et esse expedita, aut rerum eaque deserunt facilis earum repellendus fuga, impedit praesentium mollitia officia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione facere deleniti! Ducimus aut expedita ut, deleniti eveniet nostrum perspiciatis eos aliquam dignissimos culpa esse, facere at alias temporibus autem.</p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat harum quisquam voluptatum nam! Minima itaque et esse expedita, aut rerum eaque deserunt facilis earum repellendus fuga, impedit praesentium mollitia officia?</p>
+                <br>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione facere deleniti! Ducimus aut expedita ut, deleniti eveniet nostrum perspiciatis eos aliquam dignissimos culpa esse, facere at alias temporibus autem.</p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat harum quisquam voluptatum nam! Minima itaque et esse expedita, aut rerum eaque deserunt facilis earum repellendus fuga, impedit praesentium mollitia officia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quis reiciendis aliquid ad quos facere accusamus ipsa distinctio dolor a dignissimos quidem voluptate perferendis illum, at veniam soluta. Obcaecati, dolore.   </p>
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        <div class="gallery">
+
+        </div>
+        
+
+
+        <div class="footer"></div>
+
+    </div>
+
+    <div id="cobaevent" class="cobaevent" onmouseup="divkelakuan()" onmousedown="divkelakuan1()"> </div>
+    
+</body>
+<script>
+
+    function ubahwarna_dark(){
+        document.getElementById('konten').style.backgroundColor="black";
+        document.getElementById('konten').style.color="white";
+    }
+
+    function ubahwarna_light(){
+        document.getElementById('konten').style.backgroundColor="white";
+        document.getElementById('konten').style.color="black";
+    }
+ 
+
+    function divkelakuan(){
+        document.getElementById('cobaevent').className="cobaevent1";
+    }
+
+    function divkelakuan1(){
+        document.getElementById('cobaevent').className="cobaevent";
+    }
+
+</script>
+</html>
